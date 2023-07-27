@@ -35,7 +35,8 @@
 
         <!-- navbar -->
         <nav class="mb-5 md:mb-12">
-            <div class="navbar bg-white text-black md:text-white md:bg-[#F85559] p-0 lg:px-12 py-8 rounded-none lg:rounded-full">
+            <div
+                class="navbar bg-white text-black md:text-white md:bg-[#F85559] p-0 lg:px-12 py-8 rounded-none lg:rounded-full">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost xl:hidden">
@@ -62,7 +63,8 @@
                 </div>
                 <div class="navbar-center flex  ml-[6.313rem] md:ml-[28.75rem] lg:ml-0 ">
                     <img class="w-7 lg:w-auto" src="images/logo.png" alt="logo">
-                    <a class="btn btn-ghost normal-case text-xl md:text-4xl font-bold text-black md:text-white">Fruit Valley</a>
+                    <a class="btn btn-ghost normal-case text-xl md:text-4xl font-bold text-black md:text-white">Fruit
+                        Valley</a>
                 </div>
                 <div class="navbar-end">
                     <div class="form-control hidden lg:flex">
@@ -81,8 +83,7 @@
         </nav>
 
         <!-- banner-section -->
-        <section class="p-4 lg:p-0">
-
+        <section class="p-4 lg:p-0 mb-14 xl:mb-32">
             <div class="carousel w-full min-h-[calc(100vh-226px)]">
                 <!-- slide-1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -153,12 +154,130 @@
                     </div>
                 </div>
             </div>
+            <div
+                class="max-w-[1196px] justify-around text-center drop-shadow-lg bg-white p-0 m-0 xl:px-16 xl:py-12 xl:-mt-32 xl:ml-32 hidden xl:flex">
+                <figure>
+                    <img src="images/fruit1.png" alt="balckberry">
+                    <figcaption class="mt-4 text-xl font-medium">Balckberry</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/fruit2.png" alt="orange">
+                    <figcaption class="mt-4 text-xl font-medium">Orange</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/fruit3.png" alt="mango">
+                    <figcaption class="mt-4 text-xl font-medium">Mango</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/fruit4.png" alt="strawberry">
+                    <figcaption class="mt-4 text-xl font-medium">Strawberry</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/fruit5.png" alt="Pomegranate">
+                    <figcaption class="mt-4 text-xl font-medium">Pomegranate</figcaption>
+                </figure>
+            </div>
         </section>
 
     </header>
 
     <!-- main -->
-    <main>
+    <main class="max-w-[1440px] mx-auto mb-32">
+
+        <!-- Deal Section -->
+        <section class="p-4 xl:p-0">
+
+            <!-- deal and countdown -->
+            <div class="flex flex-col lg:flex-row">
+                <div class="flex-1 text-center lg:text-left mb-5">
+                    <h2 class="text-xl lg:text-5xl font-extrabold mb-6">Deal of the day</h2>
+                    <p class="text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of classical <br> Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- Countdown -->
+                <div class="flex-1 flex justify-center lg:justify-end items-center">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-4xl lg:text-5xl font-extrabold">
+                                <span style="--value:15;"></span> :
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-4xl lg:text-5xl font-extrabold">
+                                <span style="--value:10;"></span> :
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-4xl lg:text-5xl font-extrabold">
+                                <span style="--value:24;"></span> :
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-4xl lg:text-5xl font-extrabold">
+                                <span style="--value:32;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- deal card -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit6.png" alt="Apple" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title border-b-2 border-gray-300 pb-4">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <!-- rating -->
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <a class="link link-hover text-[#F85559]" onclick="my_modal_5.showModal()">Details</a>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div class="card bg-white ">
+                                        <figure class="px-10 pt-10">
+                                            <img src="images/fruit6.png" alt="Apples"
+                                                class="rounded-xl w-72" />
+                                        </figure>
+                                        <div class="card-body items-center text-center space-y-6">
+                                            <h2 class="card-title">Apples</h2>
+                                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                            <!-- modal-rating -->
+                                            <div class="rating">
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                                            </div>
+                                            <div class="card-actions gap-8">
+                                                <button class="btn btn-outline btn-error">Close</button>
+                                                <button class="btn btn-error bg-[#F85559] text-white">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
